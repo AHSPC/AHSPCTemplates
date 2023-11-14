@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "<FILL THIS IN>",
+    "version": "1.0",
+    "description": "<FILL THIS IN>",
+    "permissions": ["webNavigation", "activeTab", "scripting"], 
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["http://*/*", "https://*/*"],
+        "js": ["popup.js"]
+      }
+    ],
+    "icons": {
+      "48": "icon-48.png",
+      "128": "icon-128.png"
+    }
+  }
+  
